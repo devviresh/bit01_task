@@ -23,7 +23,7 @@ class Tile extends StatelessWidget {
                     image: NetworkImage('$coverPath'),fit: BoxFit.cover)),
           ),
           SizedBox(height: 5.0),
-          Text('$title',textAlign: TextAlign.center,
+          Text('$title',textAlign: TextAlign.center,maxLines: 3,overflow: TextOverflow.ellipsis,
               style: TextStyle(
                   fontSize: 14.0, fontWeight: FontWeight.w500)),
           SizedBox(height: 3.0),

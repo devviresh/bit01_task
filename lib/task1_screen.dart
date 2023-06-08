@@ -16,9 +16,6 @@ class TaskOne extends StatelessWidget {
       if (response.statusCode == 200) {
         String data = response.body;
         apiData = jsonDecode(data);
-        print(apiData);
-        print(apiData.length);
-        print(apiData[0]['title']);
       } else {
         print(response.statusCode);
       }
